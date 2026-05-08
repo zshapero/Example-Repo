@@ -1,0 +1,32 @@
+{
+  "expo": {
+    "name": "ShopHook",
+    "slug": "shophook",
+    "version": "0.1.0",
+    "orientation": "portrait",
+    "icon": "./assets/icon.png",
+    "userInterfaceStyle": "light",
+    "newArchEnabled": true,
+    "scheme": "shophook",
+    "splash": {
+      "image": "./assets/splash-icon.png",
+      "resizeMode": "contain",
+      "backgroundColor": "#FF2D55"
+    },
+    "ios": {
+      "supportsTablet": false,
+      "bundleIdentifier": "com.shophook.app"
+    },
+    "android": {
+      "adaptiveIcon": {
+        "foregroundImage": "./assets/adaptive-icon.png",
+        "backgroundColor": "#FF2D55"
+      },
+      "edgeToEdgeEnabled": true,
+      "package": "com.shophook.app"
+    },
+    "web": {
+      "favicon": "./assets/favicon.png"
+    }
+  }
+}
