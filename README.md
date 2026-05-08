@@ -12,9 +12,11 @@ products with commission rate, estimated earnings, and an AI-generated
 
 ## Status
 
-Day-1 scaffold. The app boots to a "Welcome to ShopHook" screen on your phone.
-Nothing else is wired yet — we'll add navigation, auth, the feed, scripts, and
-subscriptions in the following sessions.
+Day-1 scaffold. The app boots to a **"Today's Trending"** feed showing 20
+seed beauty/skincare products with brand, price, commission rate, trend
+score, and an estimated daily-earnings figure per video. Tapping a card
+logs to the console for now — script generation and detail screens come
+next.
 
 ## How to run it on your phone (first-time setup)
 
@@ -49,10 +51,19 @@ You only do this once. Five-ish minutes.
 
 ```
 .
-├── App.js          # the screen you see today
-├── app.json        # app name, icon, splash, bundle IDs
-├── assets/         # icons + splash images (placeholder, we'll replace)
-├── index.js        # entrypoint; do not edit
-├── package.json    # dependencies
+├── App.js                  # entry component (mounts the feed)
+├── app.json                # app name, icon, splash, bundle IDs
+├── assets/                 # icons + splash images (placeholder, we'll replace)
+├── index.js                # entrypoint; do not edit
+├── package.json            # dependencies
+├── src/
+│   ├── components/         # reusable UI pieces
+│   │   └── ProductCard.js
+│   ├── data/               # mock product data (swap for real API later)
+│   │   └── seedProducts.js
+│   ├── screens/            # full screens
+│   │   └── FeedScreen.js
+│   └── theme/              # colors, spacing, typography
+│       └── colors.js
 └── README.md
 ```
